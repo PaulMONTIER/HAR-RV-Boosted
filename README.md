@@ -138,6 +138,7 @@ MIT License - See [LICENSE](LICENSE) for details.
 ## 👤 Author
 
 **Paul MONTIER**  
+243765035+PaulMONTIER@users.noreply.github.com
 
 ---
 
