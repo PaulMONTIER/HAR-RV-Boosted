@@ -6,7 +6,7 @@
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange.svg)](HAR_RV_Tutorial.ipynb)
 
-## 📊 Overview
+## Overview
 
 This project implements an **extended HAR-RV (Heterogeneous Autoregressive Realized Volatility)** model for predicting stock volatility. The model builds upon Corsi (2009) by adding:
 
@@ -15,7 +15,7 @@ This project implements an **extended HAR-RV (Heterogeneous Autoregressive Reali
 - **Jumps**: Decomposition of continuous/discontinuous volatility
 - **Implied Volatility**: VIX integration for market sentiment
 
-## 🎯 Performance
+## Performance
 
 | Metric | Value |
 |--------|-------|
@@ -24,7 +24,7 @@ This project implements an **extended HAR-RV (Heterogeneous Autoregressive Reali
 | **Sharpe Ratio** | 4.6 |
 | **Profitable Stocks** | 14/14 (100%) |
 
-## 📐 Model Formula
+## Model Formula
 
 ```
 RV_{t+5} = β₀ + β₁·RV_m + β₂·RV_q + β₃·RV_neg_w + β₄·J_w + β₅·VIX + ε
@@ -38,7 +38,7 @@ RV_{t+5} = β₀ + β₁·RV_m + β₂·RV_q + β₃·RV_neg_w + β₄·J_w + β
 | `J_w` | Jump Component | 5 days |
 | `VIX` | CBOE Volatility Index | Lagged 1 day |
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Installation
 
@@ -70,7 +70,7 @@ print(f"IC: {result['ic']:.3f}")
 python har_rv_model.py
 ```
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 HAR-RV-boosted/
@@ -84,7 +84,7 @@ HAR-RV-boosted/
 └── README.md
 ```
 
-## 📈 Results
+## Results
 
 ### Backtest Performance by Stock
 
@@ -98,7 +98,7 @@ HAR-RV-boosted/
 
 ![Temporal Stability](results/temporal_stability.png)
 
-## 🔬 Validation
+## Validation
 
 The model passed rigorous validation tests:
 
@@ -109,7 +109,7 @@ The model passed rigorous validation tests:
 | Shift Test | 63.6% (volatility persistence) | ⚠️ Expected |
 | Randomize Test | 52.5% (VIX signal) | ⚠️ Expected |
 
-## 📚 Theory
+## Theory
 
 The HAR-RV model is based on the **Heterogeneous Market Hypothesis** (Müller et al., 1997):
 
@@ -123,7 +123,7 @@ The HAR-RV model is based on the **Heterogeneous Market Hypothesis** (Müller et
 
 For detailed theory, see the [Tutorial Notebook](HAR_RV_Tutorial.ipynb).
 
-## 📖 References
+## References
 
 - **Corsi, F. (2009)**. A Simple Approximate Long-Memory Model of Realized Volatility. *Journal of Financial Econometrics*, 7(2), 174-196.
 
@@ -131,15 +131,14 @@ For detailed theory, see the [Tutorial Notebook](HAR_RV_Tutorial.ipynb).
 
 - **Müller, U. A., et al. (1997)**. Volatilities of different time resolutions. *Journal of Empirical Finance*, 4(2-3), 213-239.
 
-## 📝 License
+## License
 
 MIT License - See [LICENSE](LICENSE) for details.
 
 ## 👤 Author
 
 **Paul MONTIER**  
-M2 AQTC - December 2024
 
 ---
 
-⭐ If you find this project useful, please give it a star!
+If you find this project useful, please give it a star!
